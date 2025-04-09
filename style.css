@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+#logo {
+    font-size: 36px;
+    
+    padding: 5px;
+    border-radius: 50%;
+}
+
+header {
+    background-color: rgb(240, 240, 240);
+
+    display: flex;
+}
+ul {
+    display: flex;
+}
