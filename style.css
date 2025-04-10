@@ -8,7 +8,7 @@ body {
     border-radius: 50%;
 }
 
-header {
+#mainHeader {
     background-color: rgb(240, 240, 240);
 
     display: flex;
@@ -18,12 +18,12 @@ header {
 
 }
 
-nav {
+#desktopNav {
     flex-grow:1;
     
 }
 
-ul {
+#navList {
     display: flex;
     list-style: none;
     flex-grow: 1;
@@ -33,7 +33,7 @@ ul {
 }
 
 
-a {
+.desktopListA{
     text-decoration: none;
     color: black;
     padding: 15px;
@@ -42,10 +42,47 @@ a {
     
     
 }
-a:hover {
+#rightNavContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 25px;
+}
+#mobileNavList {
+    text-align: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    margin-bottom: 70vh;
+    width: 100%;
+}
+.mobileListA {
+    text-decoration: none;
+    color: black;
+    padding: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.mobileListA:hover {
     background-color: black;
     color: white;
     border-radius: 5px;
+}
+.desktopListA:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+#menuTEXT {
+    text-align: left;
+    margin-left: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #nav-icon4 {
     width: 40px;
@@ -139,6 +176,7 @@ a:hover {
 #rightNav.open {
     width: 250px;
 }
+
 
 
 @media (min-width: 768px) {

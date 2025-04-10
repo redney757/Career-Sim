@@ -7,31 +7,66 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+<style>
+    #rightNav {
+      box-shadow: 3px 0px 20px #000000;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+    }
+    #homeIcon {
+        margin-right: 5px;
+    }
+    #aboutIcon {
+        margin-right: 5px;
+    }
+    #portfolioIcon {
+        margin-right: 5px;
+    }
+    #contactIcon {
+        margin-right: 5px;
+    }
+</style>
 
 
 <body>
     <div id="rightNav">
+        <header id="mobileHeader">
+            <h1 id="menuTEXT">MENU</h1>
+           
 
+        </header>
+        <hr>
+        <div id="rightNavContent">
+            <ul id="mobileNavList">
+                <li class="mobileList"><a class="mobileListA" href="index.html"><i class="fa-solid fa-house" id="homeIcon"></i>Home</a></li>
+                <li class="mobileList"><a  class="mobileListA" href="about.html"><i class="fa-solid fa-circle-info" id="aboutIcon"></i>About</a></li>
+                <li class="mobileList"><a class="mobileListA" href="portfolio.html"><i class="fa-solid fa-user" id="portfolioIcon"></i>Portfolio</a></li>
+                <li class="mobileList"><a class="mobileListA" href="contact.html"><i class="fa-solid fa-envelope" id="contactIcon"></i>Contact</a></li>
+            </ul>
+        </div>
+
+           
+   
 
     </div>
-    <header>
+    <header id="mainHeader">
         <h1 id="logo">&#8475</h1>
             <div id="nav-icon4">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-        <nav>
-            
+        <nav id="desktopNav">
 
-            </div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
+            <ul id="navList">
+                <li class="desktopList"><a class="desktopListA" href="index.html">Home</a></li>
+                <li class="desktopList"><a class="desktopListA" href="about.html">About</a></li>
+                <li class="desktopList"><a class="desktopListA" href="portfolio.html">Portfolio</a></li>
+                <li class="desktopList"><a class="desktopListA" href="contact.html">Contact</a></li>
             </ul>
+        </nav>
     </header>
+    
     <script src="javascript.js"></script>
 </body>
 </html>
