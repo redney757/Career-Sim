@@ -15,7 +15,9 @@ body {
     justify-content: space-between;
     align-items: center;
     align-content: center;
+    box-shadow: 3px 0px 5px #000000;
 
+    
 }
 
 #desktopNav {
@@ -48,9 +50,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 25px;
+    
 }
 #mobileNavList {
+    display: none !important;
     text-align: left;
     list-style: none;
     padding: 0px;
@@ -59,20 +62,41 @@ body {
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-around;
-    margin-bottom: 70vh;
+    
     width: 100%;
+    white-space: nowrap;
+    
+}
+#mobileNavList.open {
+    display: block !important;
+    white-space: inherit;
 }
 .mobileListA {
     text-decoration: none;
     color: black;
-    padding: 25px;
     transition: 0.3s ease-in-out;
+    display: flex;
+    flex-grow: 1;
+    padding: 25px;
+    margin: 5px;
+    align-items: start; 
+    font-size: auto;
+
 }
+.mobileList {
+    display: flex;
+    justify-content: center;
+}
+
 
 .mobileListA:hover {
     background-color: black;
     color: white;
     border-radius: 5px;
+    transform: scale(0.95);
+    
+    
+
 }
 .desktopListA:hover {
     background-color: black;
@@ -84,6 +108,10 @@ body {
     margin-left: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+
+
 #nav-icon4 {
     width: 40px;
     height: 30px;
