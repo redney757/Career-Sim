@@ -3,14 +3,14 @@ body {
 }
 #logo {
     font-size: 36px;
-    
+    font-family: "Brush Script mt", cursive;
     padding: 5px;
     border-radius: 50%;
 }
 
 #mainHeader {
     background-color: rgb(240, 240, 240);
-
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,6 +44,8 @@ body {
     
     
 }
+
+
 #rightNavContent {
     display: flex;
     flex-direction: column;
@@ -96,12 +98,14 @@ body {
     transform: scale(0.95);
     
     
+    
 
 }
 .desktopListA:hover {
     background-color: black;
     color: white;
     border-radius: 5px;
+    transition: 0.2s ease-in-out;
 }
 #menuTEXT {
     text-align: left;
@@ -205,7 +209,20 @@ body {
     width: 250px;
 }
 
-
+#mainFooter {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: rgb(240, 240, 240);
+}
+.footerText {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;
+   
+    
+}
 
 @media (min-width: 768px) {
     #nav-icon4 {
