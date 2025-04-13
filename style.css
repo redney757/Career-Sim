@@ -1,17 +1,23 @@
 body {
     margin: 0;
+    display: grid;
+    grid-template: 1fr 20fr 1fr / 1fr 6fr 1fr;
+    min-width: 486px;
+    height: 100vh;
+    background-color: rgb(240, 240, 240);
 }
 #logo {
-    font-size: 36px;
-    font-family: "Brush Script mt", cursive;
+    font-size: 32px;
+    font-family:monospace;
     padding: 5px;
     border-radius: 50%;
 }
 
 #mainHeader {
-    background-color: rgb(240, 240, 240);
-    
-    display: flex;
+    grid-row: 1;
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
     justify-content: space-between;
     align-items: center;
     align-content: center;
@@ -19,10 +25,19 @@ body {
 
     
 }
+#mainHeaderDiv {
+     display: flex;
+     grid-column: 2;
+     white-space: nowrap;
+     justify-content: space-between;
+     align-items: center;
+}
 
 #desktopNav {
     flex-grow:1;
-    
+    align-content: center;
+    justify-content: right;
+    max-width: 600px;
 }
 
 #navList {
@@ -30,6 +45,7 @@ body {
     list-style: none;
     flex-grow: 1;
     justify-content: right;
+    justify-content: space-between;
     
 
 }
@@ -39,9 +55,9 @@ body {
     text-decoration: none;
     color: black;
     padding: 15px;
-    margin-right: 5vw;
-
-    
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
     
 }
 
@@ -209,11 +225,32 @@ body {
     width: 250px;
 }
 
+#projectButton {
+    background-color: rgb(71, 71, 250);
+    border-style: none;
+    padding: 15px;
+    width: 150px;
+    border-radius: 25px;
+}
+#projectButton:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+#projectButton:active {
+    background-color: rgb(178, 178, 178);
+    color: black;
+}
+.socialLogo {
+    width: 250px;
+}
+
 #mainFooter {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    position: fixed;
+    
+    grid-row: 3;
+    grid-column: 1 / 4;
+   
     background-color: rgb(240, 240, 240);
 }
 .footerText {
@@ -224,7 +261,7 @@ body {
     
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1037px) {
     #nav-icon4 {
         display: none;
     }
@@ -237,7 +274,7 @@ body {
 
 
 }
-@media (max-width: 768px) {
+@media (max-width: 1036px) {
     nav {
         display: none !important;
     }
