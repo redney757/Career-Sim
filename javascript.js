@@ -9,7 +9,7 @@ navIcon.addEventListener('click', () => {
     rightNav.classList.toggle('open');
     mobileNav.classList.toggle('open');
     if (rightNav.classList.contains('open')) {
-        navIcon.style.marginRight = '150px';
+        navIcon.style.marginRight = '250px';
     } else {
         navIcon.style.marginRight = originalMargin;
         

@@ -1,33 +1,33 @@
 body {
     margin: 0;
-    display: grid;
-    grid-template: 1fr 20fr 1fr / 1fr 6fr 1fr;
-    min-width: 486px;
-    height: 100vh;
-    background-color: rgb(240, 240, 240);
+    
+    
+    background-color: rgb(31, 31, 31);
+
 }
 #logo {
     font-size: 32px;
     font-family:monospace;
     padding: 5px;
     border-radius: 50%;
+    color: white;
 }
 
 #mainHeader {
-    grid-row: 1;
-    grid-column: 1/4;
-    display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: sticky;
     justify-content: space-between;
     align-items: center;
     align-content: center;
     box-shadow: 3px 0px 5px #000000;
-
+    background-color: rgb(24, 24, 24);
     
 }
 #mainHeaderDiv {
      display: flex;
-     grid-column: 2;
+ 
      white-space: nowrap;
      justify-content: space-between;
      align-items: center;
@@ -53,12 +53,12 @@ body {
 
 .desktopListA{
     text-decoration: none;
-    color: black;
+
     padding: 15px;
     font-family: monospace;
     font-size: 16px;
     font-weight: bold;
-    
+    color: white;
 }
 
 
@@ -118,8 +118,8 @@ body {
 
 }
 .desktopListA:hover {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
 }
@@ -154,7 +154,7 @@ body {
     position: absolute;
     height: 6px;
     width: 100%;
-    background: black;
+    background: white;
     border-radius: 6px;
     opacity: 1;
     left: 0;
@@ -231,6 +231,7 @@ body {
     padding: 15px;
     width: 150px;
     border-radius: 25px;
+    margin-top: 15px;
 }
 #projectButton:hover {
     background-color: black;
@@ -246,10 +247,13 @@ body {
     width: 250px;
 }
 
+
 #mainFooter {
-    
-    grid-row: 3;
-    grid-column: 1 / 4;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+
    
     background-color: rgb(240, 240, 240);
 }
