@@ -7,35 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-<style>
- 
-    #rightNav {
-      box-shadow: 3px 0px 20px #000000;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
-    }
-    #homeIcon {
-        margin-right: 5px;
-    }
-    #aboutIcon {
-        margin-right: 5px;
-    }
-    #portfolioIcon {
-        margin-right: 5px;
-    }
-    #contactIcon {
-        margin-right: 5px;
-    }
-</style>
-
-
 <body>
     <div id="rightNav">
         <div>
             <header id="mobileHeader">
                 <h1 id="menuTEXT">MENU</h1>
-            
-
             </header>
             <hr>
             <div id="rightNavContent">
@@ -46,50 +22,50 @@
                     <li class="mobileList"><a class="mobileListA" href="contact.html"><i class="fa-solid fa-envelope" id="contactIcon"></i>Contact</a></li>
                 </ul>
             </div>
-
         </div>   
-   
-
     </div>
     <header id="mainHeader">
         <div id="mainHeaderDiv">
-            <div id ="logodiv">
-                <h1 id="logo">Roland Edney</h1>
-            </div>
-            <div id="nav-icon4">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div style="white-space: nowrap; display: flex; align-items: center;">
+                        <h1 id="logo"><h1 style="margin: 0; padding: 0; color: rgb(193, 95, 46); font-family: monospace;">&lt;Roland</h1><h1 style="font-family: monospace; margin: 0; padding: 0; color: rgb(39, 102, 201);"> Edney/&gt;</h1></h1>
+
             </div>
             <nav id="desktopNav">
 
-                <ul id="navList">
-                    <li class="desktopList"><a class="desktopListA" href="index.html">Home</a></li>
-                    <li class="desktopList"><a class="desktopListA" href="about.html">About</a></li>
-                    <li class="desktopList"><a class="desktopListA" href="portfolio.html">Portfolio</a></li>
-                    <li class="desktopList"><a class="desktopListA" href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+                    <ul id="navList">
+                        <li class="desktopList"><a class="desktopListA" id="home" href="index.html">Home</a></li>
+                        <li class="desktopList"><a class="desktopListA" href="about.html">About</a></li>
+                        <li class="desktopList"><a class="desktopListA" href="portfolio.html">Portfolio</a></li>
+                        <li class="desktopList"><a class="desktopListA" href="contact.html">Contact</a></li>
+                    </ul>
+            </nav> 
+                <div id="nav-icon4">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>    
     </header>
-    <main style="height: 100%;">
-
+    <main id="mainContent" style="margin: 25px;  flex-grow: 1; align-content: center;">
+        <div id="imageDiv" style="display: flex; flex-wrap: wrap-reverse; justify-content: space-between; align-items: center;">
+            <div id="introDiv">
+                <h2 id="statementHeader" style="color: white; margin: 0; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Hi, I'm Roland</h2>
+                <h3 style="color: rgb(82, 180, 245); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Web Developer & IT Specialist</h3>
+                <p id="statement" style="color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">As an aspiring web developer, my mission is to pursue excellence in every aspect of my personal and professional life. I am committed to continuous growth—constantly expanding my skill set, deepening my knowledge, and staying at the forefront of evolving technologies. With a strong dedication to craftsmanship, problem-solving, and innovation, I aim to build impactful digital experiences that not only meet but exceed expectations. My journey is fueled by curiosity, a strong work ethic, and the drive to turn challenges into opportunities for learning and mastery.<br><br> Click below to learn more about me!</p>
+                <button onclick="location.href='about.html'" id="projectButton" type="button">View Portfolio</button>
+            </div>
+                
+                <img src="selfimage1-removebg-preview.png" alt="Roland Edney" id="mainImage">
+            
+        </div>
+       
+     
     </main>
     
-    <!-- <main id="mainContent">
+    
        
-        <div id="imageDiv" style="display: flex; flex-wrap: wrap-reverse;">
-            <div id="introDiv">
-                <h2 id="statementHeader" style="color: white; margin: 0;">Mission Statement</h2>
-                <p id="statement">As an aspiring web developer, my mission is to pursue excellence in every aspect of my personal and professional life. I am committed to continuous growth—constantly expanding my skill set, deepening my knowledge, and staying at the forefront of evolving technologies. With a strong dedication to craftsmanship, problem-solving, and innovation, I aim to build impactful digital experiences that not only meet but exceed expectations. My journey is fueled by curiosity, a strong work ethic, and the drive to turn challenges into opportunities for learning and mastery.</p>
-                <button id="projectButton" type="button">My Projects</button>
-
-            </div>
-          
-                <img src="https://fullstack.instructure.com/images/thumbnails/477108/nfckQNCYMUic07TQNmcwVueoDYeHhDVWVDftdvBw" alt="Roland Edney" id="mainImage" style="border-radius: 10px; height: auto; width: auto;">
-           
-        </div>
-        <div id="socialDiv">
+       
+        <!-- <div id="socialDiv">
             <h1 id="socialHeader">Social Media</h1>
             <div id="socialImagesDiv" style="display: flex;">
                 <img class="socialLogo" src="https://static.vecteezy.com/system/resources/previews/018/930/415/non_2x/instagram-logo-instagram-icon-transparent-free-png.png">
