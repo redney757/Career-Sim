@@ -3,7 +3,7 @@ const rightNav = document.getElementById('rightNav');
 const mobileNav = document.getElementById('mobileNavList');
 // Store original margin
 const originalMargin = getComputedStyle(navIcon).marginRight;
-
+console.log("Hello world")
 navIcon.addEventListener('click', () => {
     navIcon.classList.toggle('open');
     rightNav.classList.toggle('open');
