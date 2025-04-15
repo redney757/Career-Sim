@@ -240,19 +240,109 @@ body {
     display: flex;
     justify-content: center;
 }
-.pText {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('html\ shot.png');
-    color: white;
+.pTextDiv {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('html\ shot.png');
+    border-radius: 10px;
     padding: 50px;
     max-width: 850px;
     background-size: cover;
+    position: relative;
 }
-.p1Text {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/03/pc-building-simulator-2-2-1646851306333-3.jpg');
+
+.pTextDiv:hover {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('html\ shot.png');
+    background-size: cover;
+    .pText {
+        
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+    }
+    #hoverLabel {
+        display: none;
+        
+    }
+}
+#hoverLabel {
+    transition: 0.2 ease-in-out;
     color: white;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    text-align: center;
+    align-content: center;
+    font-size: large;
+}
+.pText {
+    color: white ;
+    opacity: 0;
+    transition: 0.2 ease;
+
+}
+.p1TextDiv {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/03/pc-building-simulator-2-2-1646851306333-3.jpg');
+    border-radius: 10px;
     padding: 50px;
     max-width: 850px;
     background-size: cover;
+    position: relative;
+    
+}
+#clickContainer {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    align-content: center;
+    text-align: center;
+}
+
+#clickShow {
+    background-color:  rgb(39, 102, 201);
+    padding: 25px;
+   
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+
+}
+#clickShow:hover {
+    background-color: black;
+
+    
+}
+#clickShow:active {
+    background-color: white;
+    color: black;
+    
+}
+#p1Text {
+    color: white;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+
+}
+#clickReset {
+    display: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(39, 102, 201);
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+#clickReset:hover {
+    background-color: black;
+}
+#clickReset:active {
+    background-color: white;
+    color: black;
 }
 .p2Text {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPGDuw419DgjLLvxl-OoofrnyZWeSioYb3kw&s');
@@ -300,5 +390,8 @@ body {
     }
     #mainContent {
         grid-template-columns: 1fr;
+    }
+    #clickReset {
+        width: 150px;
     }
 }
