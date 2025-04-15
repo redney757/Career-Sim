@@ -7,6 +7,8 @@ const clickShow = document.getElementById('clickShow');
 
 // Store original margin
 const originalMargin = getComputedStyle(navIcon).marginRight;
+const originalPadding = getComputedStyle(clickShow).padding;
+
 console.log("Hello world")
 navIcon.addEventListener('click', () => {
     navIcon.classList.toggle('open');
@@ -63,12 +65,12 @@ clickReset.addEventListener('mouseout', () =>{
 
 })
 clickShow.addEventListener('mouseover', () =>{
-    clickShow.style.transform = 'scale(0.9)';
+    clickShow.style.padding = '20px';
     clickShow.style.transition = 'all 0.2s ease'
 
 })
 clickShow.addEventListener('mouseout', () =>{
-    clickShow.style.transform = 'scale(1)';
+    clickShow.style.padding = originalPadding;
     clickShow.style.transition = 'all 0.2s ease'
 
 
