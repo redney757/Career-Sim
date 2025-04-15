@@ -7,10 +7,8 @@ body {
     flex-grow: 1;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
-    
+    background-attachment: fixed; 
 }
-
 #mainHeader {
     top: 0;
     right: 0;
@@ -24,7 +22,6 @@ body {
     background-color: rgb(24, 24, 24);
     max-height: 80px;
 }
-
 #logo {
     font-size: 32px;
     font-family:monospace;
@@ -32,51 +29,41 @@ body {
     border-radius: 50%;
     color: white;
 }
-
-
 #mainHeaderDiv {
     display: flex; 
     flex-grow: 1;  
     justify-content: space-between; 
-
 }
-
 #rightNav {
     box-shadow: 3px 0px 20px #000000;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
   }
-  #homeIcon {
-      margin-right: 5px;
-  }
-  #aboutIcon {
-      margin-right: 5px;
-  }
-  #portfolioIcon {
-      margin-right: 5px;
-  }
-  #contactIcon {
-      margin-right: 5px;
-  }
-
+#homeIcon {
+    margin-right: 5px;
+}
+#aboutIcon {
+    margin-right: 5px;
+}
+#portfolioIcon {
+    margin-right: 5px;
+}
+#contactIcon {
+    margin-right: 5px;
+}
 #desktopNav {
     flex-grow:1;
     align-content: center;
     justify-content: right;
     max-width: 600px;
 }
-
 #navList {
     display: flex;
     list-style: none;
     flex-grow: 1;
     justify-content: right;
     justify-content: space-between;
-    
-
 }
-
-
 .desktopListA{
     text-decoration: none;
 
@@ -86,15 +73,12 @@ body {
     font-weight: bold;
     color: white;
 }
-
-
 #rightNavContent {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100%;
-    
 }
 #mobileNavList {
     display: none !important;
@@ -106,10 +90,8 @@ body {
     flex-direction: column;
     flex-grow: 1;
     justify-content: space-around;
-    
     width: 100%;
     white-space: nowrap;
-    
 }
 #mobileNavList.open {
     display: block !important;
@@ -125,21 +107,16 @@ body {
     margin: 5px;
     align-items: start; 
     font-size: auto;
-
 }
 .mobileList {
     display: flex;
     justify-content: center;
 }
-
-
 .mobileListA:hover {
     background-color: black;
     color: white;
     border-radius: 5px;
     transform: scale(0.95);
-    
- 
 }
 .desktopListA:hover {
     background-color: white;
@@ -157,10 +134,6 @@ body {
     margin-left: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-
-
 #nav-icon4 {
     width: 40px;
     height: 30px;
@@ -243,12 +216,11 @@ body {
     right: 0;
     bottom: 0;
     width: 0;
-    background-color: rgba(158, 153, 153, 0.795);
+    background-color: rgba(88, 85, 85, 0.98);
     overflow: hidden;
     transition: width 0.5s ease;
     z-index: 999;
 }
-
 /* When open, expand to 250px */
 #rightNav.open {
     width: 250px;
@@ -259,26 +231,21 @@ body {
     display: grid; 
     grid-template: 1fr / 1fr 6fr 1fr;
     gap: 10px;  
-    
     justify-content: center;
-
 }
 #aboutTitle {
     color: white;
 }
-
 .gridItem {
     display: flex;
     justify-content: center;
 }
-
 .pText {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('html\ shot.png');
     color: white;
     padding: 50px;
     max-width: 850px;
     background-size: cover;
-
 }
 .p1Text {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/03/pc-building-simulator-2-2-1646851306333-3.jpg');
@@ -286,7 +253,6 @@ body {
     padding: 50px;
     max-width: 850px;
     background-size: cover;
-
 }
 .p2Text {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPGDuw419DgjLLvxl-OoofrnyZWeSioYb3kw&s');
@@ -295,28 +261,20 @@ body {
     max-width: 850px;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-
-
 #mainFooter {
     bottom: 0;
     left: 0;
     right: 0;
     position: sticky; /* deciding on weather i want static or sticky*/
-
-   
     background-color: rgb(240, 240, 240);
 }
 .footerText {
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
-   
-    
+    font-size: 12px;  
 }
-
-@media (min-width: 615px) {
+@media (min-width: 970px) {
     #nav-icon4 {
         display: none;
     }
@@ -329,10 +287,8 @@ body {
     #statement {
         max-width: 600px;
     }
-
-
 }
-@media (max-width: 614px) {
+@media (max-width: 969px) {
     nav {
         display: none !important;
     }
@@ -345,6 +301,4 @@ body {
     #mainContent {
         grid-template-columns: 1fr;
     }
-    
-
 }

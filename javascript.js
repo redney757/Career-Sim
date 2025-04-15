@@ -15,7 +15,6 @@ navIcon.addEventListener('click', () => {
         
     }
 });
-
 window.addEventListener('click', () => {
     if (rightNav.classList.contains('open') && !navIcon.contains(event.target) && !rightNav.contains(event.target)) {
         navIcon.classList.remove('open');
