@@ -1,0 +1,280 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(31, 31, 31);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+#mainHeader {
+    top: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: 2;
+    white-space: nowrap; 
+    align-items: center; 
+    position: sticky;
+    padding: 15px;
+    background-color: rgb(24, 24, 24);
+    max-height: 80px;
+}
+#logo {
+    font-size: 32px;
+    font-family:monospace;
+    padding: 5px;
+    border-radius: 50%;
+    color: white;
+}
+#mainHeaderDiv {
+    display: flex; 
+    flex-grow: 1;  
+    justify-content: space-between; 
+}
+#rightNav {
+    box-shadow: 3px 0px 20px #000000;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+  }
+#homeIcon {
+    margin-right: 5px;
+}
+#aboutIcon {
+    margin-right: 5px;
+}
+#portfolioIcon {
+    margin-right: 5px;
+}
+#contactIcon {
+    margin-right: 5px;
+}
+#desktopNav {
+    flex-grow:1;
+    align-content: center;
+    justify-content: right;
+    max-width: 600px;
+}
+#navList {
+    display: flex;
+    list-style: none;
+    flex-grow: 1;
+    justify-content: right;
+    justify-content: space-between;
+}
+.desktopListA{
+    text-decoration: none;
+
+    padding: 15px;
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+#rightNavContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#mobileNavList {
+    display: none !important;
+    text-align: left;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-around;
+    width: 100%;
+    white-space: nowrap;
+}
+#mobileNavList.open {
+    display: block !important;
+    white-space: inherit;
+}
+.mobileListA {
+    text-decoration: none;
+    color: black;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    flex-grow: 1;
+    padding: 25px;
+    margin: 5px;
+    align-items: start; 
+    font-size: auto;
+}
+.mobileList {
+    display: flex;
+    justify-content: center;
+}
+.mobileListA:hover {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    transform: scale(0.95);
+}
+.desktopListA:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+#contact {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 6px;
+}
+#menuTEXT {
+    text-align: left;
+    margin-left: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#nav-icon4 {
+    width: 40px;
+    height: 30px;
+    position: relative;
+    margin: 10px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    transition: margin-right 0.5s ease, transform 0.5s ease-in-out;
+
+}
+#nav-icon4 span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: white;
+    border-radius: 6px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+#nav-icon4 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#nav-icon4 span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#nav-icon4 span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+#nav-icon4.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -2px;
+    left: 5px;
+}
+#nav-icon4.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+#nav-icon4.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 26px;
+    left: 5px;
+}
+#rightNav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background-color: rgba(88, 85, 85, 0.98);
+    overflow: hidden;
+    transition: width 0.5s ease;
+    z-index: 999;
+}
+/* When open, expand to 250px */
+#rightNav.open {
+    width: 250px;
+}
+#mainContent {
+    margin: 25px;  
+    flex-grow: 1;
+    display: grid; 
+    grid-template: 1fr / 1fr 6fr 1fr;
+    gap: 10px;  
+    justify-content: center;
+}
+#input {
+    margin: 10px;
+}
+
+#mainFooter {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: sticky; /* deciding on weather i want static or sticky*/
+    background-color: rgb(240, 240, 240);
+}
+.footerText {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 12px;  
+}
+@media (min-width: 970px) {
+    #nav-icon4 {
+        display: none;
+    }
+    nav {
+        display: block;
+    }
+    #rightNav {
+        display: none !important;
+    }
+    #statement {
+        max-width: 600px;
+    }
+}
+@media (max-width: 969px) {
+    nav {
+        display: none !important;
+    }
+    #nav-icon4 {
+        display: block;
+    }
+    #imageDiv {
+        justify-content: center !important;
+    }
+
+    #clickReset {
+        width: 150px;
+    }
+}

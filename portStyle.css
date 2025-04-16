@@ -234,6 +234,19 @@ body {
     justify-content: center;
 }
 
+.gridItem {
+    padding: 15px;
+}
+.gridTitle {
+    color: white;
+}
+.gridItemText {
+    color: white;
+}
+.gridImage {
+    border-radius: 15px;
+}
+
 #mainFooter {
     bottom: 0;
     left: 0;
@@ -246,6 +259,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 12px;  
 }
+
 @media (min-width: 970px) {
     #nav-icon4 {
         display: none;
