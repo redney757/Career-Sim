@@ -8,10 +8,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const clickShow = document.getElementById('clickShow');
     const p1Text = document.getElementById('p1Text');
     const form = document.querySelector('#form');
-    const submitButton = document.querySelector('#submit')
+    const submitButton = document.querySelector('#submit');
+    const linkedin = document.getElementById('linked');
+    const instagram = document.getElementById('instagram');
+    const facebook = document.getElementById('facebook');
+    const twitter = document.getElementById('twitter');
     const originalMargin = navIcon ? getComputedStyle(navIcon).marginRight : "0px";
     const originalPadding = clickShow ? getComputedStyle(clickShow).padding : "15px";
     const successLocation = window.location.origin + '/success.html';
+
     if (navIcon && rightNav && mobileNav) {
         navIcon.addEventListener('click', () => {
             navIcon.classList.toggle('open');
@@ -76,11 +81,33 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = window.location.origin + '/success.html';
         })
     }
+
     if (window.location.href == successLocation) {
         setTimeout(() => {
             window.location.href = window.location.origin
           }, 5000)
           console.log('redirecting')
+    }
+    if (instagram && facebook && twitter && linkedin) {
+        instagram.addEventListener('click', () => {
+            window.open('https://instagram.com')
+            
+        })
+        linkedin.addEventListener('click', () => {
+            window.open('https://linkedin.com')
+
+
+        })
+        twitter.addEventListener('click', () => {
+            window.open('https://twitter.com')
+
+
+        })
+        facebook.addEventListener('click', () => {
+            window.open('https://facebook.com')
+
+
+        })
     }
 
 });
