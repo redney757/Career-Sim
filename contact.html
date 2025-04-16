@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Roland - About</title>
+    <title>Roland - Contact</title>
     <link rel="stylesheet" href="contactStyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -47,8 +47,10 @@
         </div>    
     </header>
     <main id="mainContent">
-        <div id="mainFormDiv" style="grid-column: 2;">
-            <form id="form" target="_blank" action="success.html" style="width: auto; display: flex; justify-content: center; flex-direction: column; max-width: 500px; margin: auto;">
+        <div id="mainFormDiv" style="grid-column: 2; align-content: center;">
+           
+            <form id="form" target="_blank" style="width: auto; display: flex; justify-content: center; flex-direction: column; max-width: 500px; margin: auto;">
+                 <h1 id="formHeader" style="color: white;">Contact Me!</h1>
                 <div style="display: flex; flex-wrap: nowrap; justify-content: center;">
                     <input style="margin-right: 5px; padding: 15px; border-radius: 10px; border-style: none; width: 70%;" id="fName" type="name" name="FirstName" placeholder="First Name" required autocomplete="given-name">
                     <input style="margin-left: 5px; padding: 15px;  border-radius: 10px; border-style: none; width: 70%;" id="lName" type="name" name="LastName" placeholder="Last Name" required autocomplete="family-name">
@@ -64,7 +66,7 @@
 
                 <textarea id="tArea" rows="4" placeholder="Message" style="margin-top: 5px; width: 100%; padding: 15px; border-radius: 10px; border-style: none;  resize:vertical;" required></textarea>
                 </div>
-                <button id="submit" type="submit" style="margin-top: 5px; padding: 15px; border-radius: 10px; border-style: none;">submit</button>
+                <button id="submit" type="submit">Submit</button>
             </form>
 
         </div>

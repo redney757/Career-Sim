@@ -241,7 +241,25 @@ body {
 #input {
     margin: 10px;
 }
-
+#submit {
+    margin-top: 5px;
+    padding: 15px; 
+    border-radius: 10px; 
+    border-style: none; 
+    background-color: rgb(39, 102, 201);
+    color: white; 
+    font-weight: bold;
+    transition: all 0.2s ease-in-out;
+}
+#submit:hover {
+   color: black;
+   background-color: white;
+   cursor: pointer;
+}
+#submit:active {
+    opacity: 0.4;
+    transform: scale(0.95);
+}
 #mainFooter {
     bottom: 0;
     left: 0;

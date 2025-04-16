@@ -7,10 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const clickReset = document.getElementById('clickReset');
     const clickShow = document.getElementById('clickShow');
     const p1Text = document.getElementById('p1Text');
-
+    const form = document.querySelector('#form');
+    const submitButton = document.querySelector('#submit')
     const originalMargin = navIcon ? getComputedStyle(navIcon).marginRight : "0px";
     const originalPadding = clickShow ? getComputedStyle(clickShow).padding : "15px";
-    
+    const successLocation = window.location.origin + '/success.html';
     if (navIcon && rightNav && mobileNav) {
         navIcon.addEventListener('click', () => {
             navIcon.classList.toggle('open');
@@ -68,4 +69,18 @@ document.addEventListener("DOMContentLoaded", () => {
             clickShow.style.transition = 'all 0.2s ease';
         });
     }
+    if (form && submitButton) {
+        form.addEventListener('submit', (e) => {
+            submitButton.disable = true;
+            e.preventDefault();
+            window.location.href = window.location.origin + '/success.html';
+        })
+    }
+    if (window.location.href == successLocation) {
+        setTimeout(() => {
+            window.location.href = window.location.origin
+          }, 5000)
+          console.log('redirecting')
+    }
+
 });
