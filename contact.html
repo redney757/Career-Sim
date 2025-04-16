@@ -26,8 +26,8 @@
     </div>
     <header id="mainHeader">
         <div id="mainHeaderDiv">
-            <div style="white-space: nowrap; display: flex; align-items: center;">
-                        <h1 id="logo"><h1 style="margin: 0; padding: 0; color: rgb(193, 95, 46); font-family: monospace;">&lt;Roland</h1><h1 style="font-family: monospace; margin: 0; padding: 0; color: rgb(39, 102, 201);"> Edney/&gt;</h1></h1>
+            <div id="headerSubDiv">
+                <h1 id="logo"><h1 style="margin: 0; padding: 0; color: rgb(193, 95, 46); font-family: monospace;">&lt;Roland</h1><h1 style="font-family: monospace; margin: 0; padding: 0; color: rgb(39, 102, 201);"> Edney/&gt;</h1></h1>
 
             </div>
             <nav id="desktopNav">
@@ -47,27 +47,24 @@
         </div>    
     </header>
     <main id="mainContent">
-        <div id="mainFormDiv" style="grid-template: 1fr 1fr / 1fr 1fr;">
-            <form id="form">
-                <div style="display: flex;">
-                <input id="" type="name" name="FirstName" placeholder="First Name" required>
-                <input type="name" name="LastName" placeholder="Last Name" required>
-                
-                </div>
-                <div style="display: flex; flex-grow: 1; ">
-                    <input style="width: 100%;" type="name" name="companyName" placeholder="Company Name">
+        <div id="mainFormDiv" style="grid-column: 2;">
+            <form id="form" target="_blank" action="success.html" style="width: auto; display: flex; justify-content: center; flex-direction: column; max-width: 500px; margin: auto;">
+                <div style="display: flex; flex-wrap: nowrap; justify-content: center;">
+                    <input style="margin-right: 5px; padding: 15px; border-radius: 10px; border-style: none; width: 70%;" id="fName" type="name" name="FirstName" placeholder="First Name" required autocomplete="given-name">
+                    <input style="margin-left: 5px; padding: 15px;  border-radius: 10px; border-style: none; width: 70%;" id="lName" type="name" name="LastName" placeholder="Last Name" required autocomplete="family-name">
+                    
                 </div>
                 <div style="display: flex; flex-grow: 1;">
-                    <input style="width: 100%;" type="email" name="email" placeholder="email" required>
+                    <input id="cMame" style="margin-top: 5px; width: 100%; padding: 15px; border-radius: 10px; border-style: none;" type="name" name="companyName" placeholder="Company Name">
                 </div>
                 <div style="display: flex; flex-grow: 1;">
-
-                <textarea style="width: 100%;" rows="10"></textarea>
+                    <input id="eMail" style="margin-top: 5px; width: 100%; padding: 15px; border-radius: 10px; border-style: none;" type="email" name="email" placeholder="email" required autocomplete="email">
                 </div>
-                <button id="submit" type="submit">submit</button>
+                <div style=" display: flex; flex-grow: 1;">
 
-
-
+                <textarea id="tArea" rows="4" placeholder="Message" style="margin-top: 5px; width: 100%; padding: 15px; border-radius: 10px; border-style: none;  resize:vertical;" required></textarea>
+                </div>
+                <button id="submit" type="submit" style="margin-top: 5px; padding: 15px; border-radius: 10px; border-style: none;">submit</button>
             </form>
 
         </div>

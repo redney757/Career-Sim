@@ -22,6 +22,16 @@ body {
     background-color: rgb(24, 24, 24);
     max-height: 80px;
 }
+#mainHeaderDiv {
+    display: flex; 
+    flex-grow: 1;  
+    justify-content: space-between; 
+}
+#headerSubDiv{
+    white-space: nowrap; 
+    display: flex; 
+    align-items: center;
+}
 #logo {
     font-size: 32px;
     font-family:monospace;
@@ -29,10 +39,11 @@ body {
     border-radius: 50%;
     color: white;
 }
-#mainHeaderDiv {
-    display: flex; 
-    flex-grow: 1;  
-    justify-content: space-between; 
+#desktopNav {
+    flex-grow:1;
+    align-content: center;
+    justify-content: right;
+    max-width: 600px;
 }
 #rightNav {
     box-shadow: 3px 0px 20px #000000;
@@ -51,12 +62,6 @@ body {
 #contactIcon {
     margin-right: 5px;
 }
-#desktopNav {
-    flex-grow:1;
-    align-content: center;
-    justify-content: right;
-    max-width: 600px;
-}
 #navList {
     display: flex;
     list-style: none;
@@ -72,6 +77,11 @@ body {
     font-size: 16px;
     font-weight: bold;
     color: white;
+}
+#about {
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-underline-offset: 6px;
 }
 #rightNavContent {
     display: flex;
@@ -123,11 +133,6 @@ body {
     color: black;
     border-radius: 5px;
     transition: 0.2s ease-in-out;
-}
-#about {
-    text-decoration: underline;
-    text-decoration-color: white;
-    text-underline-offset: 6px;
 }
 #menuTEXT {
     text-align: left;

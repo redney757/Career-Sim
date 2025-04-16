@@ -1,3 +1,4 @@
+console.log('hello world')
 document.addEventListener("DOMContentLoaded", () => {
     const navIcon = document.getElementById('nav-icon4');
     const rightNav = document.getElementById('rightNav');
@@ -9,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const originalMargin = navIcon ? getComputedStyle(navIcon).marginRight : "0px";
     const originalPadding = clickShow ? getComputedStyle(clickShow).padding : "15px";
-
+    
     if (navIcon && rightNav && mobileNav) {
         navIcon.addEventListener('click', () => {
             navIcon.classList.toggle('open');
