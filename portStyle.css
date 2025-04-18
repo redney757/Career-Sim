@@ -15,7 +15,6 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    position: absolute;
     z-index: 2;
     white-space: nowrap; 
     align-items: center; 

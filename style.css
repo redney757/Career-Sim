@@ -15,14 +15,12 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    position: absolute;
     z-index: 2;
     white-space: nowrap; 
     align-items: center; 
     position: sticky;
     padding: 15px;
     background-color: rgb(24, 24, 24);
-    max-height: 80px;
 }
 #mainHeaderDiv {
     display: flex; 
