@@ -16,7 +16,7 @@ body {
     z-index: 2;
     white-space: nowrap; 
     align-items: center; 
-    position: sticky;
+    position: fixed;
     padding: 15px;
     background-color: rgb(24, 24, 24);
     max-height: 80px;
@@ -236,6 +236,7 @@ body {
     grid-template: 1fr / 1fr 6fr 1fr;
     gap: 10px;  
     justify-content: center;
+    margin-top: 80px;
 }
 #aboutTitle {
     color: white;
